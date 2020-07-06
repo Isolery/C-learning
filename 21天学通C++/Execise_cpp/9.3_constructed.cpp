@@ -15,6 +15,14 @@ public:    //将方法设置为共有，供外部调用
 		cout << "Constructed an instance of class Human" << endl;
 	}
 
+	Human(string humansName, int huamnsAge)
+	{
+		name = humansName;
+		age = huamnsAge;
+		cout << "Overloaded constructor creates" << endl;
+		IntroductionSelf();
+	}
+
 	void SetAge(int inputAge)
 	{
 		age = inputAge;
@@ -34,13 +42,17 @@ public:    //将方法设置为共有，供外部调用
 
 int main(void)
 {
-	Human firstWoman;
-	firstWoman.SetName("Gaoman");
-	firstWoman.IntroductionSelf();
+	Human firstMan;    //使用默认构造函数
+	firstMan.SetName("Liuxuewen");
+	firstMan.IntroductionSelf();
+
+	Human firstWoman("Gaoman", 24);    //使用重载构造函数
 }
 
 /* output:
 -----------------------------------------------
 Constructed an instance of class Human
-My name is Gaoman, and 1 years old
+My name is Liuxuewen, and 1 years old
+Overloaded constructor creates
+My name is Gaoman, and 24 years old
 */
