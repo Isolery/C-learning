@@ -21,7 +21,7 @@ public:    //将方法设置为共有，供外部调用
 
 	void Introduction()
 	{
-		cout << "Myname name is " << name;
+		cout << "My name name is " << name;
 		cout << ", and " << age << " years old" << endl;
 	}
 };
@@ -42,6 +42,6 @@ int main(void)
 
 /* output:
 -----------------------------------------------
-Myname is Liuxuewen, and 25 years old
-Myname is Gaoman, and 24 years old
+My name is Liuxuewen, and 25 years old
+My name is Gaoman, and 24 years old
 */
